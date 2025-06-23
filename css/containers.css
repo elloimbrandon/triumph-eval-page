@@ -1,0 +1,70 @@
+.hero-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    z-index: 10;
+}
+
+.social-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gospel-container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    .gospel-eyebrow-text {
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 32px;
+        opacity: 0.8;
+    }
+
+    .gospel-title-text {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding-bottom: 24px;
+    }
+    
+    .gospel-subtext {
+        padding-left: 0px;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        opacity: 0.8;
+
+        @media (min-width: 992px) {
+            padding-left: 60px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        margin-top: 120px;
+    }
+}
+
+.changed-lives-container {
+    background-color: #2E2320;
+    padding: 70px 40px;
+
+    @media (min-width: 768px) {
+        border-radius: 50px;
+    }
+}
+
+.service-start-container {
+    margin-bottom: 16px;
+}
+
+.footer-container {
+    margin-left: 0;
+
+    @media (min-width: 992px) {
+        margin-left: auto;
+    }
+}

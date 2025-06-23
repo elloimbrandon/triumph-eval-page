@@ -1,0 +1,123 @@
+.footer-section {
+    background-color: #ffffff;
+    color: #2E2320;
+    font-family: "Inter", sans-serif;
+}
+
+.rock-logo-footer {
+    width: 55px;
+    height: 45px;
+    margin-right: 12px;
+}
+
+.rock-solid-footer {
+    color: #2E2320;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.christian-church-footer {
+    color: #2E2320;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footer-address, .footer-phone {
+    color: #555;
+    font-size: 16px;
+}
+
+.social-icon-footer {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2E2320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icon-footer img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(25%) sepia(6%) saturate(1478%) hue-rotate(341deg) brightness(97%) contrast(89%);
+}
+
+.social-icon-footer:hover {
+    background-color: #2E2320;
+    border-color: #2E2320;
+}
+
+.social-icon-footer:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(105%) contrast(100%);
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #9E9FA1;
+    letter-spacing: 2px;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #2E2320;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ED4B1E;
+}
+
+.btn-footer-primary {
+    background-color: #2E2320;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-footer-primary:hover {
+    background-color: #ED4B1E;
+    color: #ffffff;
+}
+
+.btn-footer-secondary {
+    background-color: transparent;
+    color: #2E2320;
+    border: 1px solid #2E2320;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-footer-secondary:hover {
+    background-color: #2E2320;
+    color: #ffffff;
+    border-color: #2E2320;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 15px;
+    color: #9E9FA1;
+}
+
+.footer-bottom a {
+    color: #ED4B1E;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #2E2320;
+}

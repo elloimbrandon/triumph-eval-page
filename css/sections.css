@@ -1,0 +1,122 @@
+.hero-section {
+    max-height: 950px;
+    min-width: 100%;
+    background-image: url('../assets/images/backgrounds/crowd.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 20px;
+
+    @media (min-width: 578px) {
+        padding: 25px 25px;
+    }
+
+    @media (min-width: 768px) {
+        min-width: 0;
+        min-height: 950px;
+        border-radius: 50px;
+        padding: 40px 55px;
+    }
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    z-index: 10;
+
+    @media (min-width: 768px) {
+        min-height: 685px;
+    }
+
+    @media (min-width: 1034px) {
+        min-height: 750px;
+        max-width: 1000px;
+    }
+}
+
+.hero-footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    z-index: 10;
+}
+
+.mission-section {
+    min-height: 1000px;
+    background-color: #ED4B1E;
+    background-image: url('../assets/images/backgrounds/flow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        border-radius: 50px;
+        min-height: 1500px;
+    }
+}
+
+.mission-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        padding-top: 140px;
+        padding-bottom: 40px;
+    }
+}
+
+.mission-card {
+    width: 400px;
+    height: 348px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.mission-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.mission-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 16px;
+    padding: 10px 20px;
+
+    h4 {
+        font-size: 28px;
+        font-weight: 600;
+        padding-top: 16px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        padding-bottom: 16px;
+        margin-bottom: 0;
+    }
+}
+
+
+.love-section {
+    margin-bottom: 50px;
+}
