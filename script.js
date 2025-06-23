@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         type: 'carousel',
         startAt: 0,
         perView: 7,
+        autoplay: 2000,
         gap: 18,
         peek: 10,
         breakpoints: {
