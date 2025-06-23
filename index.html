@@ -16,7 +16,6 @@
         <!-- CSS -->
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.theme.min.css">
     </head>
     <body>
         <!-- Hero -->
@@ -97,7 +96,7 @@
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2 col-12 service-start-container">
                                 <p class="text-white mb-0 inter-400 fw-light next-service-text">Next Service Starts In:</p>   
-                                <p class="text-white mb-0 inter-400 fw-bold next-service-text">00:00:00</p>
+                                <p class="text-white mb-0 inter-400 fw-bold next-service-text countdown-timer">00:00:00</p>
                             </div>
                             <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
                                 <div class="social-icons-container">
@@ -123,13 +122,13 @@
 
         <div class="section-guard-rails">
             <section class="section-margin medium-section mx-auto">
-                <div class="container row">
-                    <p>WELCOME TO ROCK SOLID</p>
-                    <div class="col-lg-6 d-flex flex-column justify-content-center">
-                        <h2>Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</h2>
+                <div class="container welcome-text row">
+                    <p class="inter-500 eyebrow-text">WELCOME TO ROCK SOLID</p>
+                    <div class="col-lg-5 d-flex flex-column justify-content-center">
+                        <h2 class="inter-500">Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</h2>
                     </div>
-                    <div class="col-lg-4 offset-lg-2 d-flex flex-column justify-content-center">
-                        <p>Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.</p>
+                    <div class="col-lg-4 offset-lg-3 d-flex flex-column justify-content-center">
+                        <p class="about-text">Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.</p>
                     </div>
                 </div>
                 <div class="painting-container container-fluid row mx-auto px-0">
@@ -144,11 +143,13 @@
         <div class="position-relative overflow-hidden">
             <div class="section-guard-rails position-relative">
                 <section class="section-margin mission-section mx-auto overflow-hidden">
+                    <img src="assets/images/svg/dip-white.svg" alt="white curve" class="absolute-dip">
+                    <img src="assets/images/svg/down-arrow.svg" alt="arrow pointing down" class="absolute-arrow">
                     <div class="medium-section mx-auto">
-                        <div class="container-fluid mission-content row">
-                            <div class="col-lg-4 text-center">
-                                <h3 class="text-white">Our Mission is Simple</h3>
-                                <p class="text-white"><strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved, and rose from the grave to give me eternal life.</p>
+                        <div class="mission-content text-white row">
+                            <div class="col-lg-6 text-center mission-text text-white">
+                                <h3 class="text-white inter-500">Our Mission is Simple</h3>
+                                <p class="text-white inter-400"><strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that</p>
                             </div>
                         </div> 
                         <div class="container-fluid row mx-auto justify-content-center gap-4">
@@ -215,11 +216,11 @@
                 </div>
             </div>
 
-            <div class="section-guard-rails">
-                <section class="glide-container d-flex justify-content-center align-items-center mx-auto" style="margin-bottom: 100px;">
+            <!-- <div class="section-guard-rails"> -->
+                <section class="glide-container d-flex justify-content-center align-items-center mx-auto">
                     <div class="glide">
                         <div class="glide__track overflow-hidden" data-glide-el="track">
-                            <ul class="glide__slides">
+                            <ul class="glide__slides glide--disabled">
                                 <li class="glide__slide">
                                     <a href="#" class="carousel-link">
                                         <img class="carousel-image" src="assets/images/carousel/prayer-and-care.png" alt="Two people holding a candle looking left">
@@ -266,7 +267,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
+            <!-- </div> -->
 
             <div class="section-guard-rails">
                 <section class="changed-lives-container section-margin-small mx-auto">
@@ -311,21 +312,21 @@
 
         <footer class="footer-section">
             <div class="container">
-                <div class="row pt-5 pb-5">
-                    <div class="col-lg-4">
+                <div class="row pt-5 pb-5 mt-5">
+                    <div class="col-lg-5">
                         <a class="footer-logo d-flex align-items-center text-decoration-none mb-4" href="#home">
-                            <img src="assets/images/svg/rock-logo.svg" class="rock-logo-footer" alt="Rock Solid Church Logo">
+                            <img src="assets/images/svg/rock-logo-brown.svg" class="rock-logo-footer" alt="Rock Solid Church Logo">
                             <div class="name">
-                                <p class="rock-solid-footer fw-bolder text-uppercase mb-0">Rock Solid</p>
+                                <p class="rock-solid-footer fw-bolder text-uppercase mb-0 mt-1">Rock Solid</p>
                                 <p class="christian-church-footer fw-light text-uppercase mb-0">CHRISTIAN CHURCH</p>
                             </div>
                         </a>
-                        <p class="footer-address mb-3">
+                        <p class="footer-address mb-3 mt-4">
                             11340 W. Bell Road, Suite 200<br>
                             Surprise, AZ 85378
                         </p>
                         <p class="footer-phone mb-4">(000) 000-0000</p>
-                        <div class="footer-social-icons d-flex">
+                        <div class="footer-social-icons d-flex mb-5">
                             <a href="#" class="social-icon-footer me-3"><img src="assets/images/svg/facebook-f.svg" alt="Facebook"></a>
                             <a href="#" class="social-icon-footer me-3"><img src="assets/images/svg/x-twitter.svg" alt="X"></a>
                             <a href="#" class="social-icon-footer me-3"><img src="assets/images/svg/instagram.svg" alt="Instagram"></a>
@@ -333,42 +334,44 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-2 offset-lg-1">
-                        <h5 class="footer-heading text-uppercase mb-4">Quick Links</h5>
-                        <ul class="list-unstyled footer-links">
-                            <li><a href="#">About Rock Solid</a></li>
-                            <li><a href="#">Locations</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Messages</a></li>
-                            <li><a href="#">Ministries</a></li>
-                            <li><a href="#">Serving</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2">
-                        <h5 class="footer-heading text-uppercase mb-4">Get In Touch</h5>
-                        <ul class="list-unstyled footer-links">
-                            <li><a href="#">Plan a Visit Request</a></li>
-                            <li><a href="#">Prayer</a></li>
-                            <li><a href="#">Get Help</a></li>
-                            <li><a href="#">Job Openings</a></li>
-                            <li><a href="#">Report an Issue</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="footer-buttons d-flex justify-content-lg-end">
-                            <a href="#" class="btn btn-footer-primary text-uppercase me-2">Plan a Visit</a>
-                            <a href="#" class="btn btn-footer-secondary text-uppercase">Log In</a>
+                    <div class="col-lg-7">
+                        <div class="row justify-content-lg-end">
+                            <div class="col-lg-10 d-flex justify-content-lg-end mb-4">
+                                <a href="#" class="btn btn-footer-primary text-uppercase me-2" data-event-label="Plan a Visit" data-index="0">Plan a Visit</a>
+                                <a href="#" class="btn btn-footer-secondary text-uppercase" data-event-label="Log In" data-index="0">Log In</a>
+                            </div>
+                             <div class="row col-8 justify-content-lg-end">
+                                <div class="col-lg-6">
+                                    <h5 class="footer-heading text-uppercase mb-3">Quick Links</h5>
+                                    <ul class="list-unstyled footer-links">
+                                        <li><a href="#" data-event-label="About Rock Solid" data-index="0">About Rock Solid</a></li>
+                                        <li><a href="#" data-event-label="Locations" data-index="0">Locations</a></li>
+                                        <li><a href="#" data-event-label="Events" data-index="0">Events</a></li>
+                                        <li><a href="#" data-event-label="Messages" data-index="0">Messages</a></li>
+                                        <li><a href="#" data-event-label="Ministries" data-index="0">Ministries</a></li>
+                                        <li><a href="#" data-event-label="Serving" data-index="0">Serving</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-5 offset-lg-1">
+                                    <h5 class="footer-heading text-uppercase mb-3 text-start">Get In Touch</h5>
+                                    <ul class="list-unstyled footer-links">
+                                        <li><a href="#" data-event-label="Plan a Visit Request" data-index="0">Plan a Visit Request</a></li>
+                                        <li><a href="#" data-event-label="Prayer" data-index="0">Prayer</a></li>
+                                        <li><a href="#" data-event-label="Get Help" data-index="0">Get Help</a></li>
+                                        <li><a href="#" data-event-label="Job Openings" data-index="0">Job Openings</a></li>
+                                        <li><a href="#" data-event-label="Report an Issue" data-index="0">Report an Issue</a></li>
+                                    </ul>
+                                </div>
+                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column ooter-bottom pb-4 d-flex justify-content-start align-items-center gap-1">
+                <div class="column footer-bottom pb-4 d-flex justify-content-start align-items-center gap-1">
                     <p class="mb-0">&copy; 2025</p>
                     <span>|</span>
-                    <a href="#">Terms of Service</a>
+                    <a href="#" data-event-label="Terms of Service" data-index="0">Terms of Service</a>
                     <span>|</span>
-                    <a href="#">Privacy Policy</a>
+                    <a href="#" data-event-label="Privacy Policy" data-index="0">Privacy Policy</a>
                 </div>
             </div>
         </footer>
