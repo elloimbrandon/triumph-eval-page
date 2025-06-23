@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    max-width: 1888px;
+}
+
+header {
+    @media (min-width: 768px) {
+        margin: 16px;
+    }
+}
+
+@keyframes slow-bounce {
+    0%, 100% { 
+        transform: translateX(-50%) translateY(-3px); 
+    }
+    50% { 
+        transform: translateX(-50%) translateY(-10px); 
+    }
+}
+
+.inter-400 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-500 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dark-brown-text {
+    color: #2E2320;
+}
+
+.extra-margin {
+    margin-top: 100px !important;
+    margin-bottom: 125px !important;
+    z-index: 2;
+
+    @media (min-width: 992px) {
+        margin-top: 250px !important;
+        margin-bottom: 200px !important;
+    }
+}
+
+.medium-section {
+    max-width: 1280px;
+}
+
+.section-guard-rails {
+    @media (min-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.section-margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (min-width: 1024px) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.section-margin-small {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (min-width: 1024px) {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+}

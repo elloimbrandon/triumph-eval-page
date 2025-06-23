@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Solid Church</title>
+        <meta name="description" content="Rock Solid Church is a Christian church that is dedicated to helping people find Jesus and grow in their faith.">
+
+        <!-- Bootstrap CSS -->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/text.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/images.css">
+        <link rel="stylesheet" href="css/containers.css">
+        <link rel="stylesheet" href="css/sections.css">
+
+        <!-- Glide CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
+    </head>
+    <body>
+        <header>
+            <section id="hero" class="hero-section mx-auto">
+                <nav class="navbar navbar-expand-lg container-fluid">
+                    <div class="row align-items-center w-100">
+                        <div class="col-lg-2 col-6 d-flex justify-content-start px-0">
+                            <a class="church-logo-name d-flex justify-content-start align-items-center me-0 text-decoration-none" data-index="0" href="#home" data-event-label="home">
+                                <img src="assets/images/svg/rock-logo.svg" class="rock-logo" alt="Rock Solid Church Logo">
+                                <div class="name link-text">
+                                    <p class="rock-solid fw-bolder text-white text-uppercase mb-0">Rock Solid</p>
+                                    <p class="christian-church fw-light text-white text-uppercase mb-0">CHRISTIAN CHURCH</p>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="hamburger-container col-lg-10 col-6 d-flex align-items-center justify-content-end px-0">
+                            <button class="hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="hamburger-line"></span>
+                                <span class="hamburger-line"></span>
+                                <span class="hamburger-line"></span>
+                            </button>
+                        </div>
+                        
+                        <!-- Mobile Navigation -->
+                        <div class="collapse mobile-nav-dropdown" id="mobileNav">
+                            <ul class="mobile-nav-list">
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#home" data-event-label="Plan A Visit" data-index="0">Plan A Visit</a></li>
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#features" data-event-label="Who We Are" data-index="0">Who We Are</a></li>
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#about" data-event-label="Connect" data-index="0">Connect</a></li>
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contact" data-event-label="Ministrie" data-index="0">Ministries</a></li>
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contact" data-event-label="Events" data-index="0">Events</a></li>
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contact" data-event-label="Media" data-index="0">Media</a></li>
+                                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contact" data-event-label="Give Onlin" data-index="0">Give Online</a></li>
+                                <li class="mobile-nav-item mobile-account-item">
+                                    <a class="mobile-nav-link d-flex align-items-center" href="#create-account" data-event-label="Create Account">
+                                        <img src="assets/images/svg/user.svg" class="me-2" alt="User Icon" style="width: 16px; height: 16px;">
+                                        <span>Create Account</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Navigation -->
+                        <div class="desktop-nav col-lg-8 justify-content-center px-0">
+                            <ul class="navbar-nav rounded-pill border-opacity-10">
+                                <li class="nav-item"><a class="nav-link" href="#home" data-event-label="Plan A Visit" data-index="0">Plan A Visit</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#features" data-event-label="Who We Are" data-index="0">Who We Are</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about" data-event-label="Connect" data-index="0">Connect</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact" data-event-label="Ministrie" data-index="0">Ministries</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact" data-event-label="Events" data-index="0">Events</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact" data-event-label="Media" data-index="0">Media</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact" data-event-label="Give Onlin" data-index="0">Give Online</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="desktop-account-link col-lg-2 justify-content-end align-items-center px-0">
+                            <a class="text-white mb-0 d-flex align-items-center text-decoration-none link-text" href="#create-account" data-event-label="Create Account"><img src="assets/images/svg/user.svg" class="me-1" alt="User Icon">
+                                <p class="fw-light fs-6 mb-0">Create Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="hero-content mx-auto">
+                    <div class="container-fluid text-center px-0">
+                        <h1 class="hero-title text-white inter-400">We're Glad You're Here</h1>
+                        <p class="hero-subtitle text-white inter-500">We are a thriving and diverse community of real people experiencing real life together.</p>
+                    </div>
+                    <div class="hero-button-container">
+                        <a class="hero-button hero-button-primary btn btn-primary text-black inter-400" href="#visit" data-event-label="Plan a Visit" data-index="0">Plan a Visit</a>
+                        <a class="hero-button hero-button-secondary btn btn-secondary inter-400" href="#about-us" data-event-label="About Us" data-index="0">About Us</a>
+                    </div>
+                </div>
+                <div class="hero-footer-content mx-auto">
+                    <div class="container-fluid text-center px-0">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 col-12 service-start-container">
+                                <p class="text-white mb-0 inter-400 fw-light next-service-text">Next Service Starts In:</p>   
+                                <p class="text-white mb-0 inter-400 fw-bold next-service-text countdown-timer">00:00:00</p>
+                            </div>
+                            <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+                                <div class="social-icons-container">
+                                    <a href="#" class="social-icon-link me-4" target="_blank" data-event-label="Facebook" data-index="0">
+                                        <img src="assets/images/svg/facebook-f.svg" alt="Facebook" class="social-icon">
+                                    </a>
+                                    <a href="#" class="social-icon-link me-4" target="_blank" data-event-label="X" data-index="0">
+                                        <img src="assets/images/svg/x-twitter.svg" alt="X" class="social-icon">
+                                    </a>
+                                    <a href="#" class="social-icon-link me-4" target="_blank" data-event-label="Instagram" data-index="0">
+                                        <img src="assets/images/svg/instagram.svg" alt="Instagram" class="social-icon">
+                                    </a>
+                                    <a href="#" class="social-icon-link" target="_blank" data-event-label="Youtube" data-index="0">
+                                        <img src="assets/images/svg/youtube.svg" alt="Youtube" class="social-icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <div class="section-guard-rails">
+            <section class="section-margin medium-section mx-auto">
+                <div class="container welcome-text row">
+                    <p class="inter-500 eyebrow-text">WELCOME TO ROCK SOLID</p>
+                    <div class="col-lg-5 d-flex flex-column justify-content-center">
+                        <h2 class="inter-500">Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</h2>
+                    </div>
+                    <div class="col-lg-4 offset-lg-3 d-flex flex-column justify-content-center">
+                        <p class="about-text">Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.</p>
+                    </div>
+                </div>
+                <div class="painting-container container-fluid row mx-auto px-0">
+                    <div class="col-12 flex-column justify-content-center align-items-center">
+                        <img src="assets/images/content/jesus-cross.png" alt="Painted image of Jesus on the cross" class="jesus-image-content">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="position-relative overflow-hidden">
+            <div class="section-guard-rails position-relative">
+                <section class="section-margin mission-section mx-auto overflow-hidden">
+                    <img src="assets/images/svg/dip-white.svg" alt="white curve" class="absolute-dip">
+                    <img src="assets/images/svg/down-arrow.svg" alt="arrow pointing down" class="absolute-arrow">
+                    <div class="medium-section mx-auto">
+                        <div class="mission-content text-white row">
+                            <div class="col-lg-6 text-center mission-text text-white">
+                                <h3 class="text-white inter-500">Our Mission is Simple</h3>
+                                <p class="text-white inter-400"><strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that</p>
+                            </div>
+                        </div> 
+                        <div class="container-fluid row mx-auto justify-content-center gap-4">
+                            <div class="col-lg-4 mission-card">
+                                <div class="mission-card-content">
+                                    <img src="assets/images/svg/video-circle.svg" alt="play button with a half circle">
+                                    <h4 class="inter-500">Watch a Message</h4>
+                                    <p class="text-center">Catch up on the latest and past weekend service messages anytime, anywhere.</p>
+                                    <a href="#" data-event-label="Catch Our Latest Message" data-index="0" class="link-text-mission">Catch Our Latest Message</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mission-card">
+                                <div class="mission-card-content">
+                                    <img src="assets/images/svg/location-circle.svg" alt="location pin with a half circle">
+                                    <h4>Find a Location</h4>
+                                    <p class="text-center">Easily find a campus near you. Join us in person and get connected.</p>
+                                    <a href="#" data-event-label="Search Our Campuses" data-index="0" class="link-text-mission">Search Our Campuses</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mission-card">
+                                <div class="mission-card-content">
+                                    <img src="assets/images/svg/paper-plane-circle.svg" alt="paper plane with a half circle">
+                                    <h4>Get Connected</h4>
+                                    <p class="text-center">Stay connected and in the loop—sign up for updates, events, and ways to get involved.</p>
+                                    <a href="#" data-event-label="Contact Us" data-index="0" class="link-text-mission">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gospel-container container-fluid row text-white">
+                            <p class="gospel-eyebrow-text text-uppercase inter-400 mb-0">gospel</p>
+                            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                                <h2 class="gospel-title-text mb-0">The gospel is what should characterize us. It should be our identity: We are a gospel people.</h2>
+                            </div>
+                            <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                                <p class="gospel-subtext inter-400">The gospel is the good news of Jesus: That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again. And whoever believes in him has eternal life.</p>
+                            </div>
+                        </div>
+                        <div class="painting-container container-fluid row mx-auto px-0">
+                            <div class="col-12 flex-column justify-content-center align-items-center px-0">
+                                <img src="assets/images/content/followers.png" alt="Painted image of people with their backs turned" class="followers-image-content">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <div class="section-guard-rails position-relative">
+                <section class="section-margin extra-margin medium-section mx-auto position-relative line-edge">
+                    <div class="container-fluid d-flex flex-column justify-content-center align-items-center mx-auto">
+                        <h2 class="love-text text-center inter-400 text-uppercase">Rock Solid Church continues to hold out <span class="love-text-highlight-orange">love</span> <span class="love-text-highlight-gray">and Hope to the entire world.</span></h2>
+                        <a href="#" class="love-button btn btn-primary text-white inter-400">Plan a Visit</a>
+                    </div>
+                </section>
+
+                <!-- texture images -->
+                <div class="texture-image-container-top"></div>
+                <div class="texture-image-container-bottom"></div>
+
+                <div class="section-guard-rails">
+                    <section class="section-margin love-section medium-section mx-auto position-relative">
+                        <div class="container-fluid d-flex flex-column justify-content-center align-items-center mx-auto">
+                            <img src="assets/images/svg/heart-hand-shake-cirlce.svg" alt="heart hand shake with a half circle" class="pb-3">
+                            <h2 class="volunteer-text text-center inter-400">Find a Place to Volunteer</h2>
+                            <p class="volunteer-subtext text-center inter-400 mb-0">Explore our ministries—find your place, grow in faith, and connect with a vibrant community!</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="glide-container d-flex justify-content-center align-items-center mx-auto">
+                <div class="glide">
+                    <div class="glide__track overflow-hidden" data-glide-el="track">
+                        <ul class="glide__slides glide--disabled">
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/prayer-and-care.png" alt="Two people holding a candle looking left">
+                                    <p class="carousel-text">Prayer & Care</p>
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/kids.png" alt="Girl smiling">
+                                    <p class="carousel-text">Kids</p>
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/students.png" alt="Girl smiling sitting at a table">
+                                    <p class="carousel-text">Students</p>
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/worship.png" alt="Woman singing into microphone">
+                                    <p class="carousel-text">Worship</p>
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/men.png" alt="Guys in a circle smiling">
+                                    <p class="carousel-text">Men</p>
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/women.png" alt="Women sipping coffee smiling">
+                                    <p class="carousel-text">Women</p>
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="#" class="carousel-link">
+                                    <img class="carousel-image" src="assets/images/carousel/small-groups.png" alt="People sitting at a table smiling">
+                                    <p class="carousel-text">Small Groups</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-guard-rails">
+                <section class="changed-lives-container section-margin-small mx-auto">
+                    <div class="container d-flex flex-column justify-content-center align-items-center mx-auto text-white">
+                        <div class="row">
+                            <div class="col-lg-4 d-flex flex-column justify-content-start align-items-start saved-lives-text">
+                                <h2 class="text-start inter-400">Saved Lives Are Changed Lives.</h2>
+                                <p class="inter-400">Feature stories about how Rock Solid<br/> Church is making a difference in<br/> our city.</p>
+                                <a href="#" class="btn btn-primary text-white inter-400">Share Your Story</a>
+                            </div>
+                            <div class="col-lg-7 offset-lg-1">
+                                <div class="row align-items-start">
+                                    <div class="col-lg-8 mb-4 mb-lg-0">
+                                        <a href="#" class="d-block text-decoration-none">
+                                            <img src="assets/images/content/man-smiling.png" class="changed-lives-large-image w-100" alt="Man smiling at someone">
+                                            <span class="changed-lives-link-text text-white mt-2 d-block inter-400">Joshua's Road to Peace</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-4 col-6 small-image-margin">
+                                                <a href="#" class="d-block text-decoration-none">
+                                                    <img src="assets/images/content/woman-smiling.png" class="changed-lives-small-image w-100" alt="Woman smiling">
+                                                    <span class="changed-lives-link-text text-white mt-2 d-block inter-400">By Any Means<br/> Necessary</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-12 col-md-4 col-6">
+                                                <a href="#" class="d-block text-decoration-none">
+                                                    <img src="assets/images/content/woman-talking.png" class="changed-lives-small-image w-100" alt="Woman talking">
+                                                    <span class="changed-lives-link-text text-white mt-2 d-block inter-400">Holding on to Hope</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer-section">
+            <div class="container footer-container">
+                <div class="row pt-5 pb-5 mt-5">
+                    <div class="col-lg-5">
+                        <a class="footer-logo d-flex align-items-center text-decoration-none mb-4" href="#home">
+                            <img src="assets/images/svg/rock-logo-brown.svg" class="rock-logo-footer" alt="Rock Solid Church Logo">
+                            <div class="name">
+                                <p class="rock-solid-footer fw-bolder text-uppercase mb-0 mt-1">Rock Solid</p>
+                                <p class="christian-church-footer fw-light text-uppercase mb-0">CHRISTIAN CHURCH</p>
+                            </div>
+                        </a>
+                        <p class="footer-address mb-3 mt-4">
+                            11340 W. Bell Road, Suite 200<br>
+                            Surprise, AZ 85378
+                        </p>
+                        <p class="footer-phone mb-4">(000) 000-0000</p>
+                        <div class="footer-social-icons d-flex mb-5">
+                            <a href="#" class="social-icon-footer me-3"><img src="assets/images/svg/facebook-f.svg" alt="Facebook"></a>
+                            <a href="#" class="social-icon-footer me-3"><img src="assets/images/svg/x-twitter.svg" alt="X"></a>
+                            <a href="#" class="social-icon-footer me-3"><img src="assets/images/svg/instagram.svg" alt="Instagram"></a>
+                            <a href="#" class="social-icon-footer"><img src="assets/images/svg/youtube.svg" alt="Youtube"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row justify-content-lg-end">
+                            <div class="col-lg-10 d-flex justify-content-lg-end mb-4">
+                                <a href="#" class="btn btn-footer-primary text-uppercase me-2" data-event-label="Plan a Visit" data-index="0">Plan a Visit</a>
+                                <a href="#" class="btn btn-footer-secondary text-uppercase" data-event-label="Log In" data-index="0">Log In</a>
+                            </div>
+                             <div class="row col-8 justify-content-lg-end">
+                                <div class="col-lg-6">
+                                    <h5 class="footer-heading text-uppercase mb-3">Quick Links</h5>
+                                    <ul class="list-unstyled footer-links">
+                                        <li><a href="#" data-event-label="About Rock Solid" data-index="0">About Rock Solid</a></li>
+                                        <li><a href="#" data-event-label="Locations" data-index="0">Locations</a></li>
+                                        <li><a href="#" data-event-label="Events" data-index="0">Events</a></li>
+                                        <li><a href="#" data-event-label="Messages" data-index="0">Messages</a></li>
+                                        <li><a href="#" data-event-label="Ministries" data-index="0">Ministries</a></li>
+                                        <li><a href="#" data-event-label="Serving" data-index="0">Serving</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-5 offset-lg-1">
+                                    <h5 class="footer-heading text-uppercase mb-3 text-start">Get In Touch</h5>
+                                    <ul class="list-unstyled footer-links">
+                                        <li><a href="#" data-event-label="Plan a Visit Request" data-index="0">Plan a Visit Request</a></li>
+                                        <li><a href="#" data-event-label="Prayer" data-index="0">Prayer</a></li>
+                                        <li><a href="#" data-event-label="Get Help" data-index="0">Get Help</a></li>
+                                        <li><a href="#" data-event-label="Job Openings" data-index="0">Job Openings</a></li>
+                                        <li><a href="#" data-event-label="Report an Issue" data-index="0">Report an Issue</a></li>
+                                    </ul>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column footer-bottom pb-4 d-flex justify-content-start align-items-center gap-1">
+                    <p class="mb-0">&copy; 2025</p>
+                    <span>|</span>
+                    <a href="#" data-event-label="Terms of Service" data-index="0">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#" data-event-label="Privacy Policy" data-index="0">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Glide.js -->
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>

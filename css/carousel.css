@@ -1,0 +1,87 @@
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 450px;
+    border-radius: 20px;
+}
+
+.glide__slides .glide--disabled {
+    display: flex;
+    justify-content: center;
+    gap: 18px !important;
+}
+
+.glide-container {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.glide.glide--disabled .glide__slides {
+    display: flex;
+    justify-content: center;
+    gap: 18px; 
+}
+
+.glide.glide--disabled .glide__arrows {
+    display: none;
+}
+
+.glide__track {
+    overflow: hidden;
+}
+
+.glide__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 252px;
+    position: relative;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.glide__slide:hover {
+    transform: scale(.95);
+    z-index: 10;
+}
+
+.carousel-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700 !important;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.carousel-text::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-color: #ED4B1E;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-link:hover .carousel-text {
+    color: #ED4B1E;
+}
+
+.carousel-link:hover .carousel-text::after {
+    opacity: 1;
+    transform: translateX(5px) rotate(-45deg);
+}
+
+.carousel-link {
+    text-decoration: none;
+    color: inherit;
+}

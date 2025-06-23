@@ -1,0 +1,194 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    width: 100%;
+    padding: 0;
+}
+
+.rock-logo {
+    width: 55px;
+    height: 45px;
+    margin-right: 12px;
+
+    @media (min-width: 1547px) {
+        width: 65px;
+        height: 55px;
+        margin-right: 16px;
+    }
+}
+
+.rock-solid {
+    font-size: 18px;
+
+    @media (min-width: 1547px) {
+        font-size: 24px;
+    }
+}
+
+.church-logo-name {   
+    min-width: 240px !important;
+    height: 58px;
+
+    .name {
+        line-height: 20px;
+        margin-top: 8px;
+
+        @media (min-width: 1547px) {
+            line-height: 24px;
+            margin-top: 11px;
+        }
+    }
+
+    .christian-church {
+        font-size: 12px;
+
+        @media (min-width: 1547px) {
+                font-size: 15px;
+            }
+    }
+}
+
+.desktop-nav {
+    display: none !important;
+
+    @media (min-width: 1360px) {
+        display: flex !important;
+    }
+}
+
+.desktop-account-link {
+    display: none !important;
+
+    @media (min-width: 1360px) {
+        display: flex !important;
+    }    
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 8px 16px !important;
+    font-weight: 400;
+    color: #ffffff;
+    transition: color 0.3s ease;
+
+    @media (min-width: 1034px) {
+        font-size: 16px;
+    }
+}
+
+.nav-link:hover {
+    color: #2E2320 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Mobile Navigation */
+
+.hamburger-container {
+    display: inline-block;
+
+    @media (min-width: 1360px) {
+        display: none !important;
+    }
+}
+
+.hamburger-btn {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 16px 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.hamburger-line {
+    width: 20px;
+    height: 2px;
+    background-color: #2E2320;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-btn:hover .hamburger-line {
+    background-color: #2E2320;
+}
+
+.mobile-nav-dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin-top: 10px;
+    z-index: 1000;
+
+    @media (min-width: 1360px) {
+        display: none !important;
+    }  
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 16px 0;
+    margin: 0;
+}
+
+.mobile-nav-item {
+    padding: 0px 32px;
+}
+
+.mobile-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 8px 0;
+}
+
+.mobile-nav-link:hover {
+    color: #2E2320;
+}
+
+.mobile-account-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 8px;
+    padding-top: 16px;
+}

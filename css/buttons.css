@@ -1,0 +1,53 @@
+.hero-button {
+    min-width: 44px;
+    min-height: 14px;
+    padding: 14px 20px !important;   
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    
+    &.hero-button-primary {
+        background-color: rgba(251, 251, 251, 1);
+        border: none;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    
+    &.hero-button-secondary {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    @media (min-width: 578px) {
+        padding: 16px 24px !important;
+        font-size: 24px;
+    } 
+}
+
+.love-button {
+    min-width: 44px;
+    min-height: 14px;
+    padding: 14px 20px !important;
+    font-size: 24px;
+    font-weight: 700 !important;
+    line-height: 24px;
+    background-color: #2E2320;
+    border: none;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
