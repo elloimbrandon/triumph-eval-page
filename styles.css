@@ -151,19 +151,6 @@ header {
     margin-bottom: 14px;
 }
 
-/* .texture-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 1000px;
-    height: 1000px;
-    opacity: 0.8;
-    z-index: 0;
-    pointer-events: none;
-    mask: linear-gradient(to top right, rgba(255,255,255,1), rgba(255,255,255,0));
-    -webkit-mask: linear-gradient(to top right, rgba(255,255,255,1), rgba(255,255,255,0));
-} */
-
 .texture-image-container-bottom {
     background-image: url('assets/images/backgrounds/dot-texture-bottom.png');
     background-size: cover;
@@ -171,8 +158,8 @@ header {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 80px;
+    left: -260px;
     width: 1000px;
     height: 1000px;
     opacity: 0.7;
@@ -189,10 +176,10 @@ header {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 1000px;
-    height: 1000px;
+    bottom: 400px;
+    right: -250px;
+    width: 800px;
+    height: 800px;
     opacity: 0.7;
     z-index: 0;
     pointer-events: none;
@@ -341,7 +328,7 @@ header {
 }
 
 .gospel-container {
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 40px;
 
     .gospel-eyebrow-text {
@@ -369,11 +356,15 @@ header {
             padding-left: 60px;
         }
     }
+
+    @media (min-width: 992px) {
+        margin-top: 120px;
+    }
 }
 
 .extra-margin {
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 125px;
     z-index: 2;
 
     @media (min-width: 992px) {
@@ -389,10 +380,20 @@ header {
 .love-text {
     max-width: 1000px;
     color: #2E2320;
-    font-size: 60px;
+    font-size: 38px;
     font-weight: 700 !important;
-    line-height: 60px;
-    margin-bottom: 45px;
+    line-height: 44px;
+    margin-bottom: 32px;
+
+    @media (min-width: 578px) {
+        font-size: 52px;
+        line-height: 56px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 .love-text-highlight-orange {
@@ -897,33 +898,6 @@ header {
         min-height: 685px;
     }
 }
-
-/* @media (min-width: 1024px) {
-    .rock-logo {
-        width: 55px;
-        height: 45px;
-        margin-right: 12px;
-    }
-
-    .rock-solid {
-        font-size: 18px;
-    }
-
-    .church-logo-name {   
-        .name {
-            line-height: 20px;
-            margin-top: 8px;
-        }
-  
-        .christian-church {
-            font-size: 12px;
-        }
-    }
-
-    .nav-link {
-        font-size: 16px;
-    }
-} */
 
 @media (min-width: 1034px) {
 
