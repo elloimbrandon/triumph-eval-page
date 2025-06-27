@@ -129,10 +129,16 @@ header {
     padding: 12px;
     background-color: #FFFFFF;
     border-radius: 25px;
+    gap: 0;
 
     @media (min-width: 1060px) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        gap: 12px;
+    }
+
+    @media (min-width: 1330px) {
+        gap: 0px;
     }
 }
 
